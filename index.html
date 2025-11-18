@@ -5,57 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
+
+    <link rel="icon" href="./assets/favicon.svg"> 
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div class="banner-wrap">
+        <div class="overlay"></div>
         <div class="nav-bar">
-            <img src="./assets/netlix-logo.png" alt="netflix-cover-image">
-            <p><a href="https://www.netflix.com/za/login?serverState=%7B%22realm%22%3A%22growth%22%2C%22name%22%3A%22IDENTIFICATION%22%2C%22clcsSessionId%22%3A%22e6d58173-d9f8-4f1c-98cf-1c67402bbb9d%22%2C%22sessionContext%22%3A%7B%22session-breadcrumbs%22%3A%7B%22funnel_name%22%3A%22loginWeb%22%7D%7D%7D"> Sign In</a></p>
+        <img src="./assets/netlix-logo.png" alt="netflix-logo">
+        <a href="https://www.netflix.com/za/login?serverState=%7B%22realm%22%3A%22growth%22%2C%22name%22%3A%22LOGIN%22%2C%22clcsSessionId%22%3A%224917453b-58e1-406c-805d-48efecbbc090%22%2C%22sessionContext%22%3A%7B%22session-breadcrumbs%22%3A%7B%22funnel_name%22%3A%22loginWeb%22%7D%7D%7D">Sign In</a>
         </div>
 
         <div class="banner-container">
-            <h1>Unlimited Movies, TV shows, and more.</h1>
-            <h2>Watch anywhere. Cancel anytime.</h2>
+            <h1 class="card-title">Unlimited Movies, TV shows, and more.</h1>
+            <h2 class="card-subtitle">Watch anywhere. Cancel anytime.</h2>
             
             <form>
                   <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-                  <input type="text">
-                  <button>GET STARTED</button>
+                  <div class="login-field">
+                    <input class="email-field" type="email" placeholder="Email Address">
+                    <button class="get-started">GET STARTED  ></button>
+                  </div>
             </form>
-
         </div>
     </div>
 
     <div class="info-container">
-        <h1>Enjoy on your TV.</h1>
-        <p>Watch on smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.    
-        </p>
+        <div class="info">
+            <h1 class="card-title">Enjoy on your TV.</h1>
+            <p class="card-subtitle">Watch on smart TVs, Playstation, Xbox, Chromecast,<br> Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div class="tv-container">
+            <video class="video" autoplay playsinline muted loop>
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                    type="video/mp4">
+            </video>
+            <img class="tv" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
+        </div>
     </div>
 
     <div class="footer">
-        <ul>
-            <li>FAQ</li>
-            <li> Help Center</li>
-            <li> Account</li>
-            <li> Media Center</li>
-            <li> Investor Relations</li>
-            <li> Jobs</li>
-            <li> Redeem Gift Cards</li>
-            <li> Buy Gift Cards</li>
-            <li> Ways to Watch</li>
-            <li> Terms of Use</li>
-            <li> Privacy</li>
-            <li> Cookie Preferences</li>
-            <li> Corporate Information</li>
-            <li> Contact Us</li>
-            <li> Speed Test</li>
-            <li> Legal Notices</li>
-            <li> Only on Netflix</li>
+        <div class="footer-items">
+            <div class="footer-top">
+                <a href="" class="questions-title">Questions? Contact us.</a>
+            </div>
+            
+            <ul class="footer-links">
+                <li>FAQ</li>
+                <li>Help Center</li>
+                <li>Account</li>
+                <li>Investor Relations</li>
+                <li>Jobs</li>
+                <li>Redeem Gift Cards</li>
+                <li>Buy Gift Cards</li>
+                <li>Ways to Watch</li>
+                <li>Buy Blake A Ps5</li>
+                <li>Privacy</li>
+                <li>Corporate Information</li>
+                <li>Media Center</li>
+                <li>Contact Us</li>
+                <li>Speed Test</li>
+                <li>Legal Notices</li>
+                <li>Only on Netflix</li>
+            </ul>
+
+            <div class="language">
+
+            
+                <i class="material-icons">language</i>
+                <select name="languages" id="languages">
+                    <option value="English">English</option>
+                    <option value="Afrikaans">Afrikaans</option>
+                    <option value="Doesn't work yet lol">Doesn't work yet lol</option>
+                </select>
+            
+            </div>
+        </div>
+
+            <!-- <li> <a href="https://help.netflix.com/en/node/412">FAQ</a></li>
+            <li> <a href="https://help.netflix.com/en">Help Center</a></li>
+            <li> <a href="https://www.netflix.com/za/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount&serverState=%7B%22realm%22%3A%22growth%22%2C%22name%22%3A%22IDENTIFICATION%22%2C%22clcsSessionId%22%3A%2286a9fff7-1681-460f-a9b2-bc0c90e29894%22%2C%22sessionContext%22%3A%7B%22session-breadcrumbs%22%3A%7B%22funnel_name%22%3A%22loginWeb%22%7D%2C%22login.navigationSettings%22%3A%7B%22nextPage%22%3A%22https%3A%2F%2Fwww.netflix.com%2Fyouraccount%22%7D%7D%7D">Account</a></li>
+            <li> <a href="https://ir.netflix.net/ir-overview/profile/default.aspx">Investor Relations</a></li>
+            <li> <a href="https://jobs.netflix.com/">Jobs</a></li>
+            <li> <a href="https://www.netflix.com/za/redeem">Redeem Gift Cards</a></li>
+            <li> <a href="https://www.netflix.com/gift-cards">Buy Gift Cards</a></li>
+            <li> <a href="https://help.netflix.com/en/node/14361">Ways to Watch</a></li>
+            <li> <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+            <li> <a href="https://help.netflix.com/legal/privacy">Privacy</a></li>
+            <li> <a href="https://help.netflix.com/en/node/134094">Corporate Information</a></li>
+            <li> <a href="https://media.netflix.com/en/">Media Center</a></li>
+            <li> <a href="https://help.netflix.com/en/contactus">Contact Us</a></li>
+            <li> <a href="https://fast.com/">Speed Test</a></li>
+            <li> <a href="https://help.netflix.com/legal/notices">Legal Notices</a></li>
+            <li> <a href="https://www.netflix.com/za/browse/genre/839338">Only on Netflix</a></li> -->
         </ul>
     </div>
-    
-
-    <a href="./contact-us/contact-us.html" target="_blank">Contact Us</a>
 </body>
 </html>

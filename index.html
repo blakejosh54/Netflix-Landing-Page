@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
 
-    <link rel="icon" href="./assets/favicon.svg"> 
+    <link rel="icon" href="./assets/false-logo-svg.svg"> 
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./responsive.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,19 +16,19 @@
     <div class="banner-wrap">
         <div class="overlay"></div>
         <div class="nav-bar">
-        <img src="./assets/netlix-logo.png" alt="netflix-logo">
-        <a href="https://www.netflix.com/za/login?serverState=%7B%22realm%22%3A%22growth%22%2C%22name%22%3A%22LOGIN%22%2C%22clcsSessionId%22%3A%224917453b-58e1-406c-805d-48efecbbc090%22%2C%22sessionContext%22%3A%7B%22session-breadcrumbs%22%3A%7B%22funnel_name%22%3A%22loginWeb%22%7D%7D%7D">Sign In</a>
+            <img src="./assets/netlix-logo.png" alt="netflix-logo">
+            <a href="">Sign In</a>
         </div>
 
         <div class="banner-container">
-            <h1 class="card-title">Unlimited Movies, TV shows, and more.</h1>
-            <h2 class="card-subtitle">Watch anywhere. Cancel anytime.</h2>
+            <h1 class="card-title">Unlimited movies, TV<br> shows, and more</h1>
+            <h2 class="card-subtitle">Starts at R 59. Cancel anytime.</h2>
             
             <form>
                   <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
                   <div class="login-field">
-                    <input class="email-field" type="email" placeholder="Email Address">
-                    <button class="get-started">GET STARTED  ></button>
+                    <input class="email-field" type="email" placeholder="Email address">
+                    <button class="get-started">Get Started <span class="material-icons arrow">arrow_forward_ios</span></button>
                   </div>
             </form>
         </div>
@@ -40,10 +40,12 @@
             <p class="card-subtitle">Watch on smart TVs, Playstation, Xbox, Chromecast,<br> Apple TV, Blu-ray players, and more.</p>
         </div>
         <div class="tv-container">
-            <video class="video" autoplay playsinline muted loop>
-                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
-                    type="video/mp4">
-            </video>
+            <div class="vid-lock">
+                <video class="video" autoplay playsinline muted loop>
+                    <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                        type="video/mp4">
+                </video>
+            </div>
             <img class="tv" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
         </div>
     </div>
@@ -63,7 +65,7 @@
                 <li>Redeem Gift Cards</li>
                 <li>Buy Gift Cards</li>
                 <li>Ways to Watch</li>
-                <li>Buy Blake A Ps5</li>
+                <li>Cookie Preferences</li>
                 <li>Privacy</li>
                 <li>Corporate Information</li>
                 <li>Media Center</li>
@@ -79,8 +81,6 @@
                 <i class="material-icons">language</i>
                 <select name="languages" id="languages">
                     <option value="English">English</option>
-                    <option value="Afrikaans">Afrikaans</option>
-                    <option value="Doesn't work yet lol">Doesn't work yet lol</option>
                 </select>
             
             </div>

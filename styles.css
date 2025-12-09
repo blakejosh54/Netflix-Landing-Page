@@ -13,23 +13,6 @@ body{
   background-color: black;
 }
 
-.card-title{
-  font-size: 3.125rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.1;
-  font-weight: 600;
-}
-
-.card-subtitle{
-font-weight: 400;
-font-size: 1.625rem;
-margin: 1rem 0;
-}
-
-h1{
-  font-size: 3.2rem;
-}
-
 .banner-wrap{
   background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
@@ -52,19 +35,30 @@ h1{
   opacity: 70%;
 }
 
-.login-field{
+.nav-bar{
+  height: 45px;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
 }
 
-.email-field{
-  margin-right: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  padding: 6px;
-  width: 300px;
+.nav-bar > img {
+  height: 40px;
+  width: 148px;
+  z-index: 1;
+  margin-left: 22rem;
+}
+.nav-bar > a {
+  padding: 7px 17px;
   color: white;
-  background-color: transparent;
+  background-color: red;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1;
+  margin-right: 22rem;
+  font-weight: 650;
+  font-size: 14px;
 }
 
 .banner-container{
@@ -73,33 +67,76 @@ h1{
   flex-direction: column;
   align-items:center;
   min-height: 100vh;
-  height: 80%;
   justify-content: center;
+  margin-top: -80px;
   position: relative;
   color: white;
   text-align: center;
 }
 
+.card-title{
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
 
-.nav-bar{
-  height: 45px;
+.card-subtitle{
+font-weight: 700;
+font-size: 1.25rem;
+margin: 1rem 0;
+}
+
+form h3{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h1{
+  font-size: 3.2rem;
+}
+
+.login-field{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin:0 45px;
-  padding-top: 35px;
+  justify-content: center;
 }
-.nav-bar > img {
-  height: 32px;
-  z-index: 1;
-}
-.nav-bar > a {
-  padding: 7px 17px;
+
+.email-field{
+  margin-right: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 14px 16px 14px;
+  width: 442px;
   color: white;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: rgba(16, 16, 15, 0.7);
+}
+
+.email-field::placeholder {
+  color: white;
+}
+
+.get-started{
   background-color: red;
+  color: white;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 4px;
-  z-index: 1;
+  font-weight: 800;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0px 33px 0px 33px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  gap: 14px;
+}
+
+.get-started .arrow {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.25rem;
 }
 
 .info-container{
@@ -119,35 +156,35 @@ h1{
   color: white;
 }
 
-.get-started{
-  background-color: red;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 800;
-  border: 0;
-  cursor: pointer;
-}
-
 .tv-container{
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items:center ;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
 }
 
-.tv-container img{
+.tv-container .tv{
   z-index: 1;
+  width: 100%;
+  display: block;
 }
 
-.tv-container video{
+.vid-lock video{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.vid-lock{
   position: absolute;
+  top: 17%;
+  left: 13%;
+  width: 73%;
+  height: 62%;
+  overflow: hidden;
 }
 
-.email-field{
-  border-radius: 4px;
-  border-color: white;
-}
 
 .footer-top{
   margin-bottom: 30px;

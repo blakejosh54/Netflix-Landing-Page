@@ -66,6 +66,10 @@
     .nav-bar > a {
         margin-right: 2rem;
     }
+
+    .nav-bar ul{
+        display: none;
+    }
 }
 
 @media (max-width: 740px) {

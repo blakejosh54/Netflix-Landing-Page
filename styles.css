@@ -47,6 +47,7 @@ body{
   align-items: center;
   justify-content: space-between;
   padding-top: 45px;
+  position: relative;
 }
 
 .nav-bar > img {
@@ -54,6 +55,38 @@ body{
   width: 148px;
   z-index: 1;
   margin-left: 22rem;
+}
+
+.nav-links{
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  z-index: 4;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -15px;
+}
+
+.nav-links a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 10px;
+  border: 2px solid transparent;
+  transition: 
+    border-color 0.3s ease,
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.nav-links a:hover{
+  transform: scale(1.08);
+  color: #e6e6e6;
+  background-color: rgba(117, 117, 117, 0.5);
+  border-radius: 9999px;
 }
 
 .nav-bar > a {
@@ -66,6 +99,14 @@ body{
   margin-right: 22rem;
   font-weight: 650;
   font-size: 14px;
+  transform: scale(1);
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+.nav-bar > a:hover{
+  background-color: rgb(192, 9, 9);
+  transform: scale(1.025);
 }
 
 .banner-container{
@@ -139,6 +180,13 @@ h1{
   align-items: center;
   display: inline-flex;
   gap: 14px;
+  transform: scale(1);
+  transition: transform 0.25s ease;
+}
+
+.get-started:hover{
+  background-color: rgb(192, 9, 9);
+  transform: scale(1.02);
 }
 
 .get-started .arrow {
@@ -204,15 +252,18 @@ h1{
   margin-bottom: 30px;
 }
 
-.footer ul li, .questions-title{
+.footer a, .questions-title{
   color: #757575;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+.footer a:visited{
+  color: #757575;
 }
 
 .footer ul li:hover {
 color: #757575;
 cursor: pointer;
-text-decoration: underline;
 }
 
 .questions-title:hover{
@@ -251,4 +302,8 @@ text-decoration: underline;
   background: black;
   color: #999999;
   background: url(./assets/drop-down.svg) no-repeat 100%;
+}
+
+.language select:hover{
+  cursor: pointer;
 }

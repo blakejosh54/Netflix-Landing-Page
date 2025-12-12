@@ -6,6 +6,11 @@
   box-sizing:border-box ;
 }
 
+html {
+overflow-x: hidden;
+scroll-behavior: smooth;
+}
+
 body{
   font-family: "Open Sans", sans-serif;
   border: 0;
@@ -26,7 +31,7 @@ body{
   min-height: 100vh;
   height: auto;
   width: 100%;
-  border-bottom: 10px solid #222222;
+  border-bottom: 10px solid #333333;
   position: relative;
   z-index: 1;
 }
@@ -38,7 +43,7 @@ body{
   background: black;
   position: absolute;
   top: 0;
-  opacity: 70%;
+  opacity: 0.7;
 }
 
 .nav-bar{
@@ -189,7 +194,7 @@ h1{
   transform: scale(1.02);
 }
 
-.get-started .arrow {
+.get-started .arrow{
     display: inline-flex;
     align-items: center;
     font-size: 1.25rem;
@@ -202,7 +207,6 @@ h1{
   color: white;
   display: flex;
   padding: 70px 45px;
-  border-bottom: 10px solid #222222;
 }
 
 .info{
@@ -240,8 +244,85 @@ h1{
   display: block;
 }
 
+/* FAQ styles */
 
-/* footer section styles */
+.faq-footer {
+  background: black;
+  color: white;
+  padding: 48px 0;
+}
+
+.faq-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 24px 32px;
+}
+
+.faq-heading {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0 0 18px;
+  color: white;
+}
+
+details {
+  background: #333333;
+  margin-bottom: 12px;
+  padding: 0;
+  overflow: visible;
+  transition: background-color 0.3s ease;
+}
+
+details:hover{
+  background-color: #444444;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 26px 30px;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  outline: none;
+  user-select: none;
+}
+
+summary::-webkit-details-marker{
+  display: none; 
+}
+
+summary::after{
+  content: "+";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 50%;
+  transition: transform 0.18s ease;
+}
+
+details[open] summary{
+  background: #262626;
+}
+
+details[open] summary::after{
+  content: "-";
+}
+
+details p{
+  margin: 14px 30px 22px;
+  color: #bfbfbf;
+  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
 
 .footer-items{
   margin: 0 47.5px;
@@ -280,6 +361,8 @@ cursor: pointer;
   color: white;
 }
 
+/* Language button styles */
+
 .language{
   height: 53px;
   width: 142px;
@@ -307,3 +390,4 @@ cursor: pointer;
 .language select:hover{
   cursor: pointer;
 }
+

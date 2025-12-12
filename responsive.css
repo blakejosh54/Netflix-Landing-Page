@@ -175,8 +175,19 @@
     .language {
         width: 120px;
     }
-}
 
-html, body {
-overflow-x: hidden;
+    .faq-heading {
+        font-size: 28px; 
+    }
+
+    summary {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    details p {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+    }
 }

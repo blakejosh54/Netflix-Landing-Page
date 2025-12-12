@@ -1,3 +1,7 @@
+/* mobile, tablet and laptop responsiveness styles */
+
+
+
 @media (max-width: 1919px) {
 
     .nav-bar > img {
@@ -102,12 +106,12 @@
         margin-bottom: 20px;
     }
 
- .login-field {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
+    .login-field {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
     }
 
 

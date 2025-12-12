@@ -1,3 +1,4 @@
+/* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
@@ -13,6 +14,10 @@ body{
   background-color: black;
 }
 
+
+/* header section styles */
+
+/* background */
 .banner-wrap{
   background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
@@ -26,6 +31,7 @@ body{
   z-index: 1;
 }
 
+/* background opacity effect */
 .overlay{
   height: 100%;
   width: 100%;
@@ -49,6 +55,7 @@ body{
   z-index: 1;
   margin-left: 22rem;
 }
+
 .nav-bar > a {
   padding: 7px 17px;
   color: white;
@@ -87,6 +94,7 @@ font-size: 1.25rem;
 margin: 1rem 0;
 }
 
+/* email field heading style */
 form h3{
   font-size: 1rem;
   font-weight: 500;
@@ -139,6 +147,9 @@ h1{
     font-size: 1.25rem;
 }
 
+
+/* info section styles */
+
 .info-container{
   color: white;
   display: flex;
@@ -152,28 +163,12 @@ h1{
   flex-direction: column;
 }
 
-.footer-links{
-  color: white;
-}
-
 .tv-container{
   position: relative;
   display: flex;
   width: 100%;
   max-width: 600px;
   margin: auto;
-}
-
-.tv-container .tv{
-  z-index: 1;
-  width: 100%;
-  display: block;
-}
-
-.vid-lock video{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 .vid-lock{
@@ -185,14 +180,28 @@ h1{
   overflow: hidden;
 }
 
+.vid-lock video{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tv-container .tv{
+  z-index: 1;
+  width: 100%;
+  display: block;
+}
+
+
+/* footer section styles */
+
+.footer-items{
+  margin: 0 47.5px;
+  padding: 70px 45px;
+}
 
 .footer-top{
   margin-bottom: 30px;
-}
-
-.footer-items{
-margin: 0 47.5px;
-padding: 70px 45px;
 }
 
 .footer ul li, .questions-title{
@@ -217,6 +226,7 @@ text-decoration: underline;
   padding: 0;
   font-size: 14px;
   line-height: 2.5;
+  color: white;
 }
 
 .language{
@@ -227,10 +237,10 @@ text-decoration: underline;
   justify-content: center;
   align-items: center;
   color: #999999;
-    border: 1px solid #999999;
-    padding: 0 10px;
-    margin-top: 30px;
-    border-radius: 3px;
+  border: 1px solid #999999;
+  padding: 0 10px;
+  margin-top: 30px;
+  border-radius: 3px;
 }
 
 .language select{

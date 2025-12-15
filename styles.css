@@ -53,6 +53,7 @@ body{
   justify-content: space-between;
   padding-top: 45px;
   position: relative;
+  z-index: 9;
 }
 
 .nav-bar > img {
@@ -104,14 +105,10 @@ body{
   margin-right: 22rem;
   font-weight: 650;
   font-size: 14px;
-  transform: scale(1);
-  transition: transform 0.25s ease;
-  display: inline-block;
 }
 
 .nav-bar > a:hover{
   background-color: rgb(192, 9, 9);
-  transform: scale(1.025);
 }
 
 .banner-container{
@@ -185,13 +182,10 @@ h1{
   align-items: center;
   display: inline-flex;
   gap: 14px;
-  transform: scale(1);
-  transition: transform 0.25s ease;
 }
 
 .get-started:hover{
   background-color: rgb(192, 9, 9);
-  transform: scale(1.02);
 }
 
 .get-started .arrow{
@@ -270,7 +264,6 @@ details {
   margin-bottom: 12px;
   padding: 0;
   overflow: visible;
-  transition: background-color 0.3s ease;
 }
 
 details:hover{

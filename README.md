@@ -1,5 +1,8 @@
+# Netflix Landing Page Clone
+
 A responsive clone of Netflix’s landing page built with HTML & CSS.
 
+## Features
 - Responsive layout
 - Hero section with CTA
 - Modern UI styling

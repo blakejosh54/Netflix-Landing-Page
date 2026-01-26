@@ -8,7 +8,7 @@ A responsive clone of Netflix’s landing page built with HTML & CSS.
 - Modern UI styling
 
 
-##Tech Stack
+## Tech Stack
 - HTML
 - CSS
 
